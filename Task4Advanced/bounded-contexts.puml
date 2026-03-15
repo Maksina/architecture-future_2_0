@@ -1,0 +1,26 @@
+@startuml bc
+
+!theme plain
+skinparam backgroundColor #FEFEFE
+skinparam rectangle {
+  roundCorner 10
+  borderColor #333
+}
+
+rectangle "**Домен: Финансы**\nКредиты и счета" as Fin #E8F4FD
+rectangle "**Домен: Клиники**\nПоток пациентов и ресурсы" as Cl #E8FDE8
+rectangle "**Домен: ИИ-сервисы**\nМедицинская аналитика ИИ" as AI #FDF8E8
+rectangle "**Домен: Фармацевтические компании и партнеры**\nПоставки и партнёрские данные" as Ph #F5E8FD
+rectangle "**Домен: Аналитика**\nВитрина данных" as An #F0F0F0
+
+rectangle "**Шина событий**\n(Kafka)" as EB #FFE8CC
+
+Fin -down-> EB : публикует события
+Cl -down-> EB : публикует события
+AI -down-> EB : публикует события
+Ph -down-> EB : публикует события
+
+EB -down-> An : подписка
+EB .down.> Fin : подписка (при необходимости)
+EB .down.> Cl : подписка (при необходимости)
+@enduml
