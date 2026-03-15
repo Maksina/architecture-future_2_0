@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Страница-1" id="JcZeggo1b_EsqQrYhWwI">
+    <mxGraphModel dx="2066" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="390" width="780" x="60" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-2" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="Шина событий&lt;div&gt;(kafka)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="190" x="340" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Домен&lt;/b&gt;: ИИ-сервисы&lt;div&gt;&lt;br&gt;&lt;div&gt;Медицинская аналитика ИИ&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Домен&lt;/b&gt;: Фармацевтические компании и партнеры&lt;div&gt;&lt;br&gt;&lt;div&gt;Поставки и партнёрские данные&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-9" edge="1" parent="1" source="Ars76HdpAUZfvBPfQtfb-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Ars76HdpAUZfvBPfQtfb-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-10" connectable="0" parent="Ars76HdpAUZfvBPfQtfb-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="подписка&lt;div&gt;(все события)&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.28" y="2" as="geometry">
+            <mxPoint x="22" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Домен&lt;/b&gt;: Аналитика&lt;div&gt;&lt;br&gt;&lt;div&gt;Витрина данных&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="630" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Домен&lt;/b&gt;: Клиники&lt;div&gt;&lt;br&gt;&lt;div&gt;Поток пациентов и ресурсы&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;Домен&lt;/b&gt;: Финансы&lt;div&gt;&lt;br&gt;&lt;div&gt;Кредиты и счета&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="80" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-11" edge="1" parent="1" source="Ars76HdpAUZfvBPfQtfb-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.732;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;" target="Ars76HdpAUZfvBPfQtfb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-12" connectable="0" parent="Ars76HdpAUZfvBPfQtfb-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Создан кредитный договор&lt;div&gt;Открыт счёт&lt;/div&gt;&lt;div&gt;Изменён счёт&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2873" y="-4" as="geometry">
+            <mxPoint x="32" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-13" edge="1" parent="1" source="Ars76HdpAUZfvBPfQtfb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.326;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;" target="Ars76HdpAUZfvBPfQtfb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-14" connectable="0" parent="Ars76HdpAUZfvBPfQtfb-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Заказ партнёра создан&lt;div&gt;Поставка получена&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1532" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-15" edge="1" parent="1" source="Ars76HdpAUZfvBPfQtfb-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.321;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="Ars76HdpAUZfvBPfQtfb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-16" connectable="0" parent="Ars76HdpAUZfvBPfQtfb-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Зарегистрирован приём&lt;div&gt;Приём завершён&lt;/div&gt;&lt;div&gt;Приём отменён&lt;/div&gt;&lt;div&gt;Приём перенесён&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.234" y="3" as="geometry">
+            <mxPoint x="46" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-17" edge="1" parent="1" source="Ars76HdpAUZfvBPfQtfb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.737;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;" target="Ars76HdpAUZfvBPfQtfb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ars76HdpAUZfvBPfQtfb-18" connectable="0" parent="Ars76HdpAUZfvBPfQtfb-17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Пройдено исследование ИИ&lt;div&gt;Исследование ИИ не выполнено&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0658" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
